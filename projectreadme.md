@@ -14,5 +14,3 @@ Screenshot
 ![image-20210307175921391](image-20210307175921391.png)
 
 
-
-https://www.google.co.uk/?gws_rd=ssl

@@ -27,7 +27,35 @@ if (lengthOfPasswordNumber < 8 || lengthOfPasswordNumber > 128 ){
   return "";
 }
 
-  return "password"
+//Generate a password using the selection
+var passwordOptions = "";
+var passwordFinal = "";
+
+if (userWantsUpper === true){
+  passwordOptions += upperCase;
+  passwordFinal += upperCase[Math.floor(Math.random() * upperCase.length)];
+}
+
+if (userWantsLower === true){
+  passwordOptions += lowerCase;
+  passwordFinal += lowerCase[Math.floor(Math.random() * lowerCase.length)]
+}
+
+if (userWantsNumbers === true){
+  passwordOptions += numbers;
+  passwordFinal += numbers[Math.floor(Math.random() * numbers.length)]
+}
+
+if (userWantsSpecials === true){
+  passwordOptions += special;
+passwordFinal += special[Math.floor(Math.random() * special.length)]
+}
+
+for (var i = passwordFinal.length; i <= lengthOfPasswordNumber -1 ; i++){
+  passwordFinal += passwordOptions[Math.floor(Math.random() * passwordOptions.length)]
+}
+
+  return passwordFinal
 }
 
 // Write password to the #password input

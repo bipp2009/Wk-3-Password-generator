@@ -48,8 +48,7 @@ This homework is graded based on the following criteria:
 
 * Satisfies all of the preceding acceptance criteria plus the following:
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
+  * ls
 ### Deployment: 32%
 
 * Application deployed at live URL.

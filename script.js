@@ -50,7 +50,7 @@ if (userWantsSpecials === true){
   passwordOptions += special;
 passwordFinal += special[Math.floor(Math.random() * special.length)]
 }
-
+// Final piece that generates the password
 for (var i = passwordFinal.length; i <= lengthOfPasswordNumber -1 ; i++){
   passwordFinal += passwordOptions[Math.floor(Math.random() * passwordOptions.length)]
 }
@@ -69,3 +69,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+consolelog
